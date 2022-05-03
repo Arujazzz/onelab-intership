@@ -1,0 +1,13 @@
+<ul class="nav">
+  <!-- <li> <a routerLink="/home" routerLinkActive="active">home</a></li> -->
+  <li><a routerLink="/home/about" routerLinkActive="active">About</a></li>
+  <li><a routerLink="/home/categories" routerLinkActive="active">Category</a></li>
+  <li><a routerLink="/home/products" routerLinkActive="active">All products</a></li>
+  <li><a routerLink="/home/cart" routerLinkActive="active">Cart</a></li>
+  <li class="logout"><a (click)="logout()">Logout</a></li>
+</ul>
+
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

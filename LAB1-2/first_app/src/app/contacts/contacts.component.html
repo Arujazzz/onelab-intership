@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="name" (input) = "Search()">
+
+<img src="https://cdn-icons-png.flaticon.com/512/751/751463.png">
+
+<div *ngFor="let contact of contacts">
+  <div class="contact">
+
+    <h3>{{contact.name}}</h3>
+    <h4> {{contact.number}} </h4>
+
+  </div>
+</div>

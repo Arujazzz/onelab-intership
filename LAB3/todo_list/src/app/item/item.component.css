@@ -1,0 +1,40 @@
+.task{
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  width: 90%;
+  height: 2em;
+  background-color: #d3d8df;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+button {
+  display: block;
+  position: absolute;
+  margin-left: 821px;
+  cursor: pointer;
+  width: 2.3em;
+  height: 2.3em;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(77, 129, 226);
+  border: 1px solid #17191a;
+  border-radius: 5px;
+
+}
+
+button:hover {
+  background-color: #737399;
+}
+
+input{
+  width: 2em;
+  height: 2em;
+}
+.is_done{
+  text-decoration: line-through;
+}

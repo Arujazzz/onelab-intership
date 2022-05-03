@@ -1,0 +1,32 @@
+<form [formGroup]="my_Form">
+  <div class="form-group">
+      <label>Имя</label>
+      <input class="form-control" name="name" formControlName="userName" >
+
+      <div class="alert alert-danger"
+          *ngIf="my_Form.controls['userName'].invalid && my_Form.controls['userName'].touched">
+          Не указано имя
+      </div>
+  </div>
+  <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" name="email" formControlName="userEmail" />
+
+      <div class="alert alert-danger"
+          *ngIf="my_Form.controls['userEmail'].invalid && my_Form.controls['userEmail'].touched">
+          Некорректный email
+      </div>
+  </div>
+  <div class="form-group">
+      <label>Телефон</label>
+      <input class="form-control" name="phone" formControlName="userPhone" />
+      <div class="alert alert-danger"
+          *ngIf="my_Form.controls['userPhone'].invalid && my_Form.controls['userPhone'].touched">
+          Некорректный номер телефона
+      </div>
+  </div>
+</form>
+
+<div>
+  <button type="submit" (click)="addItem()"  [disabled]="my_Form.invalid">Отправить</button>
+</div>

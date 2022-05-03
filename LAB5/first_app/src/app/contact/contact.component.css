@@ -1,0 +1,11 @@
+.my-form {
+  padding: 10px;
+}
+
+.red-text {
+  color: red;
+  font-size: 10px;
+}
+
+input.ng-touched.ng-invalid {border:solid red 2px;}
+input.ng-touched.ng-valid {border:solid green 2px;}

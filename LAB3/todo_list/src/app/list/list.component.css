@@ -1,0 +1,13 @@
+.todo-list {
+  width: 70%;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+.todo{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}

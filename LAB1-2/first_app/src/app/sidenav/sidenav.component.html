@@ -1,0 +1,22 @@
+<div class="menu">
+
+    <li><button (click)="menu = 'home'">Home</button></li>
+
+    <li><button (click)="menu = 'about'">About us</button></li>
+
+    <li><button (click)="menu = 'contacts'">Contacts</button></li>
+
+  </div>
+
+  <div [ngSwitch]="menu">
+    <div *ngSwitchCase="'home'">
+      <app-home></app-home>
+    </div>
+    <div *ngSwitchCase="'about'">
+      <app-about></app-about>
+    </div>
+    <div *ngSwitchCase="'contacts'">
+      <app-contacts></app-contacts>
+    </div>
+  </div>
+  

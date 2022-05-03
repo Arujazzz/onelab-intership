@@ -1,0 +1,9 @@
+<h2>Pipes</h2>
+
+<!-- <p>{{currentDate | date: 'dd MMMM YY H:m' }}</p>
+
+<p>{{4564654 | number}}</p> -->
+
+<div *ngFor="let user of users">
+  <p>{{user.username | filter: 'short'}} </p>
+</div>

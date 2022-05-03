@@ -1,0 +1,33 @@
+
+.menu li{
+  list-style-type: none;
+  color:rgb(253, 253, 253);
+  margin: 185px;
+}
+
+.menu{
+  width: 1366px;
+  height: 50px;
+  background-color: rgb(187, 180, 180);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -8px;
+  margin-top: -9px;
+}
+
+button{
+  background-color: rgb(187, 180, 180);
+  color:rgb(253, 253, 253);
+  border-style: none;
+  border-radius: 3px;
+}
+button:hover{
+  background-color: rgb(143, 138, 131);
+}
+
+.menu li button{
+  cursor: pointer;
+  font-size: 20px;
+}

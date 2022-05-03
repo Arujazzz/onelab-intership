@@ -1,0 +1,5 @@
+<div class="task">
+  <input type="checkbox" (click)="is_done = !is_done">
+  <li [class.is_done]="is_done">{{item.name}}</li>
+  <button (click)="deleteHandle.emit()">x</button>
+</div>

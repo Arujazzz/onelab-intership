@@ -1,0 +1,10 @@
+<header>
+  <div>ToDo List</div>
+</header>
+
+<h1 class="title">ToDo List</h1>
+
+<div class="main-box">
+  <input type="text" [(ngModel)]="value" placeholder="Enter new task" class="input-task">
+  <button (click)="addHandle.emit(value); value='' ">Add</button>
+</div>
